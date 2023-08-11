@@ -67,7 +67,15 @@
     //     }
     // };
 
-    
+    var btnmenu = function() {
+        if ($('header').hasClass('header')) {
+            
+            $('.show-search').on('click', function () {
+                $(this).closest('.header-search').find('.top-search').toggleClass('active');
+            });
+            
+        }
+    }
 
     // var retinaLogos = function() {
     //     var retina = window.devicePixelRatio > 1 ? true : false;
@@ -90,7 +98,7 @@
     // Dom Ready
     $(function () {
         // headerFixed();
-        
+        btnmenu();
         // retinaLogos();
         // preloader();
     });
