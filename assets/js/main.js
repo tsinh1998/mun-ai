@@ -77,6 +77,30 @@
         }
     }
 
+    var counter = function () {
+        if ($(document.body).hasClass("counter-scroll")) {
+          var a = 0;
+          $(window).scroll(function () {
+            var oTop = $(".counter").offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+              if ($().countTo) {
+                $(".counter")
+                  .find(".number")
+                  .each(function () {
+                    var to = $(this).data("to"),
+                      speed = $(this).data("speed");
+                    $(this).countTo({
+                      to: to,
+                      speed: speed,
+                    });
+                  });
+              }
+              a = 1;
+            }
+          });
+        }
+    };
+
     // var retinaLogos = function() {
     //     var retina = window.devicePixelRatio > 1 ? true : false;
     //       if(retina) {
@@ -99,6 +123,7 @@
     $(function () {
         // headerFixed();
         btnmenu();
+        counter();
         // retinaLogos();
         // preloader();
     });

@@ -762,6 +762,11 @@ textarea {
     height: 130px;
 }
 
+button[type="submit"]:hover {
+    background: #FFF;
+    color: #6844ED;
+}
+
 /* Placeholder color */
 ::-webkit-input-placeholder {
     color: #696969;
@@ -829,23 +834,6 @@ h6 {
 
 /* Extra classes
 -------------------------------------------------------------- */
-.msg-success{
-    background: linear-gradient(to right, #E250E5,#4B50E6,#E250E5);
-    background-clip: text;
-    -webkit-background-clip:text;
-    font-weight: 700;
-    background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out infinite;
-    color: rgb(0 0 0 / 0);
-    transition: color .2s ease-in-out;
-    font-size  : 18px;
-    font-weight: 400;
-    line-height: 28px;
-}
-
-label.error {
-    color: #ff0000; 
-}
 .hidden {
     display: none;
 }
@@ -898,6 +886,9 @@ label.error {
 .gap40 {
     gap: 40px;
 }
+.gap25 {
+    gap: 25px;
+}
 .gap20 {
     gap: 20px;
 }
@@ -930,6 +921,15 @@ label.error {
 .mb-30 {
     margin-bottom: 30px;
 }
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
 .fl-item-1,
 .fl-item {
     display: none;
@@ -939,6 +939,9 @@ label.error {
 }
 .italic {
     font-style: italic;
+}
+.e-resize {
+    cursor: e-resize;
 }
 #wrapper{
     position: relative;
@@ -1034,6 +1037,10 @@ a:focus {
     color: #6844ED;
     font-size: 16px;
     line-height: 11px;
+}
+
+.tf-button-default:hover {
+    color: #030014;
 }
 
 .tf-button-default i {
@@ -1250,7 +1257,7 @@ a:focus {
 }
 
 .wg-list-avatar a {
-    margin-right: -10px;
+    margin-right: -12px;
 }
 
 .wg-list-avatar a img {
@@ -1270,7 +1277,7 @@ a:focus {
     margin-bottom: 40px;
 }
 
-#footer p {
+#footer p.text {
     color: #FFF;
     font-family: 'Space Grotesk';
     font-size: 16px;
@@ -1314,6 +1321,34 @@ ul.wg-menu li:last-child {
 
 ul.wg-menu li a {
     color: #FFF;
+    position: relative;
+}
+
+
+ul.wg-menu li a::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6844ED;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.wg-menu li a:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+ul.wg-menu li a:hover {
+    color: #6844ED;
 }
 
 .footer-bottom {
@@ -1323,6 +1358,10 @@ ul.wg-menu li a {
     padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-bottom p a:hover {
+    color: #CBED44 !important;
 }
 
 .footer-bottom ul li a {
