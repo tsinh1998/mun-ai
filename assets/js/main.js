@@ -29,44 +29,7 @@
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-
-    // var headerFixed = function () {
-    //     if ($("header").hasClass("header-fixed")) {
-    //       var nav = $("#header_main");
-    
-    //       if (nav.length) {
-    //         var offsetTop = nav.offset().top,
-    //           headerHeight = nav.height(),
-    //           injectSpace = $("<div>", {
-    //             height: headerHeight,
-    //           });
-    //         injectSpace.hide();
-    
-    //         if ($("header").hasClass("style-absolute")) {
-    //           injectSpace.hide();
-    //         } else {
-    //           injectSpace.insertAfter(nav);
-    //         }
-    
-    //         $(window).on("load scroll", function () {
-    //           if ($(window).scrollTop() > offsetTop + headerHeight) {
-    //             nav.addClass("is-fixed");
-    //             injectSpace.show();
-    //           } else {
-    //             nav.removeClass("is-fixed");
-    //             injectSpace.hide();
-    //           }
-    
-    //           if ($(window).scrollTop() > 100) {
-    //             nav.addClass("is-small");
-    //           } else {
-    //             nav.removeClass("is-small");
-    //           }
-    //         });
-    //       }
-    //     }
-    // };
-
+   
     var btnmenu = function() {
         if ($('header').hasClass('header')) {
             
@@ -101,31 +64,33 @@
         }
     };
 
-    // var retinaLogos = function() {
-    //     var retina = window.devicePixelRatio > 1 ? true : false;
-    //       if(retina) {
-    //         var tfheader =$('#logo_header').data('retina');
-    //         $('#site-logo-inner').find('img').attr({src:tfheader,width:'168px',height:'57px'});
-    //         var tffooter =$('#logo_footer').data('retina');
-    //         $('#logo-footer').find('img').attr({src:tffooter,width:'168px',height:'57px'});
-    //       }
-    // };  
+    var flatAccordion = function (class1,class2) {
+        var args = { duration: 600 };
 
-    // var preloader = function () {
-    //     setTimeout(function () {
-    //     $(".preload-container").fadeOut("slow", function () {
-    //         $(this).remove();
-    //     });
-    //     }, 1000);
-    // };
+        $(class2 + ' .toggle-title.active').siblings('.toggle-content').show();
+        $(class1 +' .toggle-title').on('click', function () {
+            $(class1 + ' ' + class2).removeClass('active');
+            $(this).closest(class2).toggleClass('active');
+
+            if( !$(this).is('.active') ) {
+                $(this).closest(class1).find('.toggle-title.active').toggleClass('active').next().slideToggle(args);
+                $(this).toggleClass('active');
+                $(this).next().slideToggle(args);
+            } else {
+                $(class1 + ' ' + class2).removeClass('active');
+                $(this).toggleClass('active');
+                $(this).next().slideToggle(args);
+            }     
+        });
+
+    };
 
     // Dom Ready
     $(function () {
-        // headerFixed();
         btnmenu();
         counter();
-        // retinaLogos();
-        // preloader();
+        flatAccordion('.flat-accordion','.flat-toggle');
+        flatAccordion('.flat-accordion1','.flat-toggle1');
     });
 
 })(jQuery);

@@ -1029,6 +1029,21 @@ a:focus {
     background-color: #fff;
 }
 
+.tf-button.type-1:hover {
+    background-color: #030014;
+    color: #FFF;
+}
+
+.tf-button.type-2 {
+    background-color: #030014;
+    color: #FFF;
+}
+
+.tf-button.type-2:hover {
+    background-color: #6844ED;
+    color: #FFF;
+}
+
 /* tf-button-default */
 .tf-button-default {
     display: flex;
@@ -1394,33 +1409,40 @@ ul.wg-menu li a:hover {
 
 .cta-wrapper .ellipse {
     position: absolute;
-    content: '';
     left: 50%;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.10);
     transform: translate(-50%, 55%);
+    z-index: 0;
 }
 
 .cta-wrapper .ellipse.item1 {
     width: 200px;
     height: 200px;
+    animation: ellipse1 3s linear 0s infinite;
 }
 
 .cta-wrapper .ellipse.item2 {
     width: 290px;
     height: 290px;
+    animation: ellipse1 3s linear 0s infinite;
+    animation-delay: 0.5s;
 }
 
 .cta-wrapper .ellipse.item3 {
     width: 394px;
     height: 394px;
+    animation: ellipse1 3s linear 0s infinite;
+    animation-delay: 1s;
 }
 
 .cta-wrapper .ellipse.item4 {
     width: 496px;
     height: 496px;
+    animation: ellipse1 3s linear 0s infinite;
+    animation-delay: 1.5s;
 }
 
 .cta-title h6 {
