@@ -82,8 +82,46 @@
                 $(this).next().slideToggle(args);
             }     
         });
-
     };
+
+    var filter = function() {
+        if ($('div').hasClass("widget-filter-isotope")) {
+          var $grid = $(".grid").isotope(
+            {
+            itemSelector: ".element-item",
+            layoutMode: "fitRows"
+          }
+          );
+         
+          $(".filters-button-group").on("click", "button", function () {
+            var filterValue = $(this).attr("data-filter");
+            $grid.isotope({ filter: filterValue });
+          });
+          
+          $(".button-group").each(function (buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on("click", "button", function () {
+              $buttonGroup.find(".is-checked").removeClass("is-checked");
+              $(this).addClass("is-checked");
+            });
+          });
+        }
+    }
+
+    var price = function() {
+        if ($('div').hasClass('pricing-item style-2')) {
+            $('.button-price').on('click', function () {
+                var price =$(this).data('price');
+                $(this).closest('.pricing-item').find('.number-price').text(price);
+            })
+        }
+    }
+
+    $(document).ready(function() {
+        $('.popup-youtube').magnificPopup({
+        type: 'iframe'
+      });
+    });
 
     // Dom Ready
     $(function () {
@@ -91,6 +129,8 @@
         counter();
         flatAccordion('.flat-accordion','.flat-toggle');
         flatAccordion('.flat-accordion1','.flat-toggle1');
+        filter();
+        price();
     });
 
 })(jQuery);

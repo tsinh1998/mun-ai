@@ -26,3 +26,23 @@ var sliderinit = function() {
     }
 }
 sliderinit();
+
+var gallery = function(){
+    if ( $('div').hasClass('widget-gallery-slider') ){
+  var slider = new Swiper ('.gallery-slider', {
+    slidesPerView: 1,
+    loop: true,
+    loopedSlides: 6,
+  });
+  
+  var thumbs = new Swiper ('.gallery-thumbs', {
+    slidesPerView: 'auto',
+    spaceBetween: 11,
+    loop: true,
+    slideToClickedSlide: true,
+  });
+    slider.controller.control = thumbs;
+    thumbs.controller.control = slider;
+  }
+}
+gallery();
