@@ -113,6 +113,11 @@
             $('.button-price').on('click', function () {
                 var price =$(this).data('price');
                 $(this).closest('.pricing-item').find('.number-price').text(price);
+
+                if( !$(this).is('.active') ) {
+                  $(this).closest('.price-tabs').find('.button-price.active').toggleClass('active');
+                  $(this).toggleClass('active');
+                }  
             })
         }
     }
