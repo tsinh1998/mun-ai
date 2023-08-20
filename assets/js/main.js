@@ -122,6 +122,51 @@
         }
     }
 
+    var rangeslider = function () {
+      if ($("#range-two-val").length > 0) {
+        var rangeTwoSlider = document.getElementById("range-two-val");
+        noUiSlider.create(rangeTwoSlider, {
+          start: [0, 89],
+          connect: true,
+          tooltips: [true, true],
+          range: {
+            min: 0,
+            max: 240,
+          },
+          format: {
+            to: (v) => v | 0,
+            from: (v) => v | 0,
+          },
+        });
+      }
+    };
+
+    var dropdown = function(id){
+      if ($('div').hasClass('dropdown')) {
+      var obj = $(id+'.dropdown');
+      var btn = obj.find('.btn-selector');
+      var dd = obj.find('ul');
+      var opt = dd.find('li');
+          dd.hide();
+          obj.on("mouseenter", function() {
+              dd.show();
+              dd.addClass('show');
+              $(this).css("z-index",1000);
+          }).on("mouseleave", function() {
+              dd.hide();
+               $(this).css("z-index","auto")
+               dd.removeClass('show');
+          })
+          
+          opt.on("click", function() {
+              dd.hide();
+              var txt = $(this).text();
+              opt.removeClass("active");
+              $(this).addClass("active");
+              btn.text(txt);
+          });
+  }}
+
     $(document).ready(function() {
         $('.popup-youtube').magnificPopup({
         type: 'iframe'
@@ -136,6 +181,8 @@
         flatAccordion('.flat-accordion1','.flat-toggle1');
         filter();
         price();
+        rangeslider();
+        dropdown('#sort-by');
     });
 
 })(jQuery);

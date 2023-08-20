@@ -9,6 +9,7 @@
 @import "responsive.css";
 @import "animation.css";
 @import "animate.min.css";
+@import "nouislider.min.css";
 @import "swiper-bundle.min.css";
 @import "../font/font.css";
 @import "bootstrap.css";
@@ -863,6 +864,9 @@ h6 {
 .flex-grow {
     flex-grow: 1;
 }
+.row-reverse {
+    flex-direction: row-reverse;
+}
 .justify-center {
     justify-content: center;
 }
@@ -1070,6 +1074,12 @@ a:focus {
 .tf-button.h45 {
     padding: 17px 30px;
     height: 45px;
+}
+
+.tf-button.h40 {
+    padding: 15px 25px 14px ;
+    height: 40px;
+    font-size: 14px;
 }
 
 .tf-button.style-2 {

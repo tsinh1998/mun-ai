@@ -3,7 +3,7 @@ var sliderinit = function() {
 
     // basic options for all sliders
     let defaults = {
-        spaceBetween: 30,
+        spaceBetween: 0,
         slidesPerView: 1
     };
     // call init function
