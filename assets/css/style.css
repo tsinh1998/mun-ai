@@ -920,6 +920,12 @@ h6 {
     height: 1px;
     background-color: rgba(255, 255, 255, 0.1);
 }
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -940,6 +946,15 @@ h6 {
 }
 .mb-60 {
     margin-bottom: 60px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+.ml-35 {
+    margin-left: 35px;
+}
+.ml--3 {
+    margin-left: -3px;
 }
 .fl-item-1,
 .fl-item {
@@ -1137,10 +1152,14 @@ a:focus {
 }
 
 .header-inner {
-    padding: 26px 70px;
+    padding: 29px 52px 31px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#site-logo {
+    margin-right: 100px;
 }
 
 /* main-nav */
@@ -1152,7 +1171,7 @@ a:focus {
 
 .menu-primary-menu {
     display: flex;
-    gap: 45px;
+    gap: 46px;
 }
 
 .menu-primary-menu li {
@@ -1168,17 +1187,13 @@ a:focus {
     position: relative;
 }
 
-/* .menu-primary-menu li:hover a {
-    color: #6844ED;
-} */
-
 .menu-primary-menu li.menu-item-has-children > a::after {
     font-family: 'icomoon';
     content: '\e915';
-    font-size: 12px;
+    font-size: 18px;
     line-height: 13px;
     position: absolute;
-    right: -16px;
+    right: -20px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -1273,7 +1288,7 @@ a:focus {
 .search-form .icon-search {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 23px;
     font-size: 18px;
     cursor: pointer;
     -webkit-transform: translateY(-50%);
@@ -1305,8 +1320,8 @@ a:focus {
 }
 
 .footer-top {
-    padding-top: 223px;
-    padding-bottom: 85px;
+    padding-top: 218px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1314,7 +1329,7 @@ a:focus {
 
 .avatar-wrapper {
     display: flex;
-    gap: 20px 50px;
+    gap: 20px 54px;
     align-items: center;
 }
 
@@ -1332,7 +1347,11 @@ a:focus {
 }
 
 .wg-list-avatar a {
-    margin-right: -12px;
+    margin-right: -13px;
+}
+
+.wg-list-avatar a:last-child {
+    margin-right: 3px;
 }
 
 .wg-list-avatar a img {
@@ -1349,7 +1368,7 @@ a:focus {
     font-weight: 600;
     line-height: 14px;
     letter-spacing: -0.6px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 }
 
 #footer p.text {
@@ -1357,7 +1376,9 @@ a:focus {
     font-family: 'Space Grotesk';
     font-size: 16px;
     font-weight: 400;
-    line-height: 22.3px;
+    line-height: 28px;
+    margin-top: -4px;
+    margin-bottom: 21px;
 }
 
 ul.wg-social {
@@ -1427,16 +1448,21 @@ ul.wg-menu li a:hover {
 }
 
 .footer-bottom {
-    margin-top: 40px;
-    padding-top: 40px;
+    margin-top: 75px;
+    padding-top: 41px;
     border-top: 2px solid rgba(255, 255, 255, 0.15);
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     display: flex;
     justify-content: space-between;
 }
 
 .footer-bottom p a:hover {
     color: #CBED44 !important;
+}
+
+.footer-bottom ul {
+    gap: 41px;
+    display: flex;
 }
 
 .footer-bottom ul li a {
@@ -1450,6 +1476,56 @@ ul.wg-menu li a:hover {
     color: #6844ED;
 }
 
+#footer .item1 {
+    position: absolute;
+    top: 249px;
+    left: 72px;
+}
+
+#footer .item2 {
+    position: absolute;
+    bottom: 122px;
+    left: -59px;
+    width: 160px;
+    height: 29px;
+    transform: rotate(-20.673deg);
+    background: #61FF00;
+    filter: blur(40px);
+}
+
+#footer .item3 {
+    position: absolute;
+    bottom: -86px;
+    left: 808px;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background: #00FFF0;
+    filter: blur(50px);
+}
+
+#footer .item4 {
+    position: absolute;
+    top: 101px;
+    right: 438px;
+    width: 160px;
+    height: 29px;
+    transform: rotate(-20.673deg);
+    background: #FF00E5;
+    filter: blur(40px);
+}
+
+#footer .item5 {
+    position: absolute;
+    bottom: 191px;
+    right: -189px;
+    width: 223px;
+    height: 223px;
+    border-radius: 50%;
+    background: #ECE30A;
+    filter: blur(50px);
+}
+
 /* cta */
 .cta {
     margin-bottom: -138px;
@@ -1460,7 +1536,7 @@ ul.wg-menu li a:hover {
 .cta-wrapper {
     border-radius: 30px;
     background: #6844ED;
-    padding: 80px;
+    padding: 80px 80px 68px 80px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -1509,25 +1585,31 @@ ul.wg-menu li a:hover {
     color: #fff;
     line-height: 13px;
     letter-spacing: -0.54px;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
 }
 
 .cta-title h2 {
     color: #fff;
-    line-height: 45.5px;
+    line-height: 57px;
     letter-spacing: -1.44px;
 }
 
 .cta-title h2 span {
+    line-height: 51px;
     font-style: italic;
     font-family: 'Playfair Display';
 }
 
+.cta-content {
+    margin-right: 2px;
+}
+
 .cta-content p {
-    line-height: 20.5px;
+    line-height: 29px;
     color: #fff;
     font-size: 18px;
-    margin-bottom: 35px;
+    margin-top: -6px;
+    margin-bottom: 27px;
 }
 
 .cta-wrapper-1 {
@@ -1604,10 +1686,55 @@ ul.wg-menu li a:hover {
 /* flat-title-page */
 /* --------------------------------------------------- */
 .flat-title-page {
-    padding-top: 224px;
+    padding-top: 220px;
     padding-bottom: 150px;
     background: #030014;
     position: relative;
+    overflow: hidden;
+}
+
+.flat-title-page .item1 {
+    position: absolute;
+    top: 202px;
+    left: -59px;
+    width: 160px;
+    height: 29px;
+    transform: rotate(-20.673deg);
+    background: #61FF00;
+    filter: blur(40px);
+}
+
+.flat-title-page .item2 {
+    position: absolute;
+    bottom: -86px;
+    left: 668px;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background: #00FFF0;
+    filter: blur(50px);
+}
+
+.flat-title-page .item3 {
+    position: absolute;
+    top: -27px;
+    right: 438px;
+    width: 160px;
+    height: 29px;
+    transform: rotate(-20.673deg);
+    background: #FF00E5;
+    filter: blur(40px);
+}
+
+.flat-title-page .item4 {
+    position: absolute;
+    bottom: -149px;
+    right: -129px;
+    width: 223px;
+    height: 223px;
+    border-radius: 50%;
+    background: #ECE30A;
+    filter: blur(50px);
 }
 
 .flat-title-page::before {
@@ -1647,9 +1774,9 @@ ul.wg-menu li a:hover {
 
 .breadcrumbs li::before {
     position: absolute;
-    right: -40px;
-    font-size: 27px;
-    top: -4px;
+    right: -46px;
+    font-size: 29px;
+    top: -5px;
     color: #FFF;
 }
 

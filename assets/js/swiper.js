@@ -32,7 +32,8 @@ var gallery = function(){
   var slider = new Swiper ('.gallery-slider', {
     slidesPerView: 1,
     loop: true,
-    loopedSlides: 6,
+    effect:'fade',
+    loopedSlides: 4,
   });
   
   var thumbs = new Swiper ('.gallery-thumbs', {
