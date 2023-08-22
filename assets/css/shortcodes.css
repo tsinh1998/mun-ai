@@ -737,13 +737,10 @@
 .wg-banner-1 {
     position: relative;
     padding-top: 275px;
-    padding-bottom: 215px;
+    padding-bottom: 214px;
     background: #030014;
     overflow: hidden;
     background-image: url(../images/item-background/line.png);
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
 }
 
 .wg-banner-1 .bg-item .item-1 {
@@ -1052,18 +1049,18 @@
 }
 
 .wg-banner-1 .wrap-user.item-1 {
-    left: 43px;
+    left: 45px;
     bottom: -86px;
 }
 
 .wg-banner-1 .wrap-user.item-2 {
-    left: 228px;
+    left: 230px;
     bottom: 18px;
 }
 
 .wg-banner-1 .wrap-user.item-3 {
-    top: -49px;
-    right: -114px;
+    top: -50px;
+    right: -116px;
 }
 
 .wg-banner-1 .border-dashed-line {
@@ -1083,8 +1080,9 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 33px;
-    letter-spacing: -0.66px;
-    margin-bottom: 30px;
+    letter-spacing:-0.66px;
+    margin-bottom: 10px;
+    margin-top: -9px;
 }
 
 .heading-section .main-title {
@@ -1099,10 +1097,16 @@
     color: #6844ED;
     font-family: 'Playfair Display';
     font-style: italic;
+    line-height: 51px;
 }
 
 /* wg-result */
 /* ------------------------------------------- */
+.wg-result .counter {
+    margin-top: 11px;
+    margin-bottom: 55px;
+}
+
 .wg-result .number-counter span {
     color: #6844ED;
     font-family: 'Playfair Display';
@@ -1177,12 +1181,130 @@
 
 .wg-create-design .content {
     padding-top: 42px;
+    padding-left: 61px;
+}
 
+.heading-section h6 {
+    letter-spacing: -0.54px;
+    margin-bottom: 12px;
+    margin-top: -7px;
+}
+
+.wg-create-design .heading-section {
+    margin-bottom: 31px;
+}
+
+.wg-create-design .content p {
+    margin-bottom: 24px;
+}
+
+.wg-create-design ul {
+    margin-bottom: 42px;
+}
+
+/* style-1 */
+.wg-create-design.style-1 {
+    position: relative;
+    background: #0C091D;
+    padding-top: 130px;
+    padding-bottom: 155px;
+    overflow: hidden;
+}
+
+.wg-create-design.style-1 .content {
+    padding-left: 0;
+    padding-top: 68px;
+}
+
+.wg-create-design.style-1 .content h6,
+.wg-create-design.style-1 .content .main-title {
+    color: #FFF;
+}
+
+.wg-create-design.style-1 .image {
+    width: 100%;
+}
+
+.wg-create-design.style-1 .image .img-01 {
+    position: absolute;
+    left: 100px;
+    border-radius: 25px;
+}
+
+.wg-create-design.style-1 .image .img-02 {
+    position: absolute;
+    bottom: -25px;
+    left: 42px;
+    width: 355px;
+    height: 355px;
+    border: 5px solid #FFF;
+}
+
+.wg-create-design.style-1 .image .img-03 {
+    position: absolute;
+    bottom: -30px;
+    right: -59px;
+}
+
+.wg-create-design.style-1 .item1 {
+    position: absolute;
+    top: 111px;
+    left: 108px;
+}
+
+.wg-create-design.style-1 .item2 {
+    position: absolute;
+    bottom: 295px;
+    left: -59px;
+    width: 160px;
+    height: 29px;
+    transform: rotate(-20.673deg);
+    background: #61FF00;
+    filter: blur(40px);
+}
+
+.wg-create-design.style-1 .item3 {
+    position: absolute;
+    bottom: -69px;
+    left: 668px;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background: #00FFF0;
+    filter: blur(50px);
+}
+
+.wg-create-design.style-1 .item4 {
+    position: absolute;
+    top: -27px;
+    right: 438px;
+    width: 160px;
+    height: 29px;
+    transform: rotate(-20.673deg);
+    background: #FF00E5;
+    filter: blur(40px);
+}
+
+.wg-create-design.style-1 .item5 {
+    position: absolute;
+    bottom: 191px;
+    right: -189px;
+    width: 223px;
+    height: 223px;
+    border-radius: 50%;
+    background: #ECE30A;
+    filter: blur(50px);
+}
+
+.wg-create-design.style-1 .item6 {
+    position: absolute;
+    bottom: 0px;
+    left: -339px;
 }
 
 /* list-item */
 ul.list-item li {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     color: #696969;
     font-size: 16px;
     font-weight: 400;
@@ -1196,10 +1318,32 @@ ul.list-item li .icon-tick::before {
     color: #6844ED;
 }
 
-/* wg-tool */
+/* list-tool */
+/* -------------------------------------------- */
+.list-tool {
+    padding-top: 130px;
+    padding-bottom: 100px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(235, 235, 253, 0.00) 0%, #EBEBFD 100%);
+}
+
+.list-tool::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 800px;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/item-background/line-1.png);
+}
+
+.list-tool .heading-section {
+    margin-bottom: 58px;
+}
+
 .wg-tool {
     border: 1px solid #fff;
-    padding: 40px 50px;
+    padding: 38px 50px 30px 50px;
     border-radius: 16px;
     background: #fff;
     margin-bottom: 30px;
@@ -1222,8 +1366,8 @@ ul.list-item li .icon-tick::before {
 
 .wg-tool h3 {
     letter-spacing: -0.72px;
-    margin-top: 35px;
-    margin-bottom: 25px;
+    margin-top: 21px;
+    margin-bottom: 8px;
 }
 
 .wg-tool h3 a {
@@ -1236,8 +1380,8 @@ ul.list-item li .icon-tick::before {
 
 .wg-tool .order {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 30px;
+    right: 53px;
     font-size: 100px;
     font-weight: 700;
     line-height: 90px;
@@ -1248,12 +1392,17 @@ ul.list-item li .icon-tick::before {
     -webkit-text-fill-color: transparent;
 }
 
-/* wg-helpful */
+/* helpful */
+/* ----------------------------------------- */
+.helpful .heading-section {
+    margin-bottom: 58px;
+}
+
 .wg-helpful {
     border-radius: 15px;
     border: 1.5px solid rgba(104, 68, 237, 0.20);
     background: #EBEBFD;
-    padding: 35px 30px;
+    padding: 35px 30px 27px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -1276,7 +1425,7 @@ ul.list-item li .icon-tick::before {
     margin: auto;
     background: #fff;
     border-radius: 50%;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -1313,6 +1462,11 @@ ul.list-item li .icon-tick::before {
 }
 
 /* wg-road-map */
+/* -------------------------------------------- */
+.wg-road-map .heading-section {
+    margin-bottom: 58px;
+}
+
 .road-map-content {
     position: relative;
     padding: 0 110px;
