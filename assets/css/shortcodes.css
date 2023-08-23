@@ -1075,6 +1075,10 @@
 
 /* heading-section */
 /* ------------------------------------------- */
+.heading-section {
+    margin-bottom: 58px;
+}
+
 .heading-section .sub-title {
     color: #696969;
     font-size: 22px;
@@ -1100,10 +1104,15 @@
     line-height: 51px;
 }
 
+/* style-1 */
+.heading-section.style-1 .main-title {
+    color: #FFF;
+}
+
 /* wg-result */
 /* ------------------------------------------- */
 .wg-result .counter {
-    margin-top: 11px;
+    margin-top: -47px;
     margin-bottom: 55px;
 }
 
@@ -1219,6 +1228,40 @@
 .wg-create-design.style-1 .content h6,
 .wg-create-design.style-1 .content .main-title {
     color: #FFF;
+}
+
+.wg-create-design.style-1 .content p {
+    margin-bottom: 36px;
+}
+
+.wg-create-design.style-1 .content ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wg-create-design.style-1 .content ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px 15px 20px;
+    border-radius: 15px;
+    background: #FFF;
+    color: #030014;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.6px;
+    margin-bottom: 0;
+}
+
+.wg-create-design.style-1 .content ul li i {
+    padding: 7px;
+    background-color: #6844ED;
+    color: #FFF;
+    font-size: 16px;
+    border-radius: 50%;
 }
 
 .wg-create-design.style-1 .image {
@@ -1337,10 +1380,6 @@ ul.list-item li .icon-tick::before {
     background-image: url(../images/item-background/line-1.png);
 }
 
-.list-tool .heading-section {
-    margin-bottom: 58px;
-}
-
 .wg-tool {
     border: 1px solid #fff;
     padding: 38px 50px 30px 50px;
@@ -1394,9 +1433,6 @@ ul.list-item li .icon-tick::before {
 
 /* helpful */
 /* ----------------------------------------- */
-.helpful .heading-section {
-    margin-bottom: 58px;
-}
 
 .wg-helpful {
     border-radius: 15px;
@@ -1463,9 +1499,6 @@ ul.list-item li .icon-tick::before {
 
 /* wg-road-map */
 /* -------------------------------------------- */
-.wg-road-map .heading-section {
-    margin-bottom: 58px;
-}
 
 .road-map-content {
     position: relative;
@@ -1490,7 +1523,7 @@ ul.list-item li .icon-tick::before {
     max-width: 410px;
     border-radius: 15px;
     background: #EBEBFD;
-    padding: 40px 50px;
+    padding: 40px 50px 30px;
     border: 1px solid #EBEBFD;
     position: relative;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1515,12 +1548,12 @@ ul.list-item li .icon-tick::before {
 }
 
 .road-map-item.item-3 {
-    margin-top: -50px;
+    margin-top: -48px;
 }
 
 .road-map-item.item-4 {
     margin-top: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
 }
 
 .road-map-item .number {
@@ -1538,8 +1571,8 @@ ul.list-item li .icon-tick::before {
 }
 
 .road-map-item h4 {
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 9px;
 }
 
 .road-map-item h4 a {
@@ -1580,14 +1613,62 @@ ul.list-item li .icon-tick::before {
 }
 
 /* wg-pricing */
+/* ---------------------------------------- */
 .wg-pricing {
     padding: 130px 0;
     background-image: url(../images/item-background/line-1.png);
     background-color: #EBEBFD;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.wg-pricing .item1 {
+    position: absolute;
+    top: 522px;
+    left: -59px;
+    width: 160px;
+    height: 29px;
+    transform: rotate(-20.673deg);
+    background: #61FF00;
+    filter: blur(40px);
+}
+
+.wg-pricing .item2 {
+    position: absolute;
+    bottom: -86px;
+    left: 668px;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background: #00FFF0;
+    filter: blur(50px);
+}
+
+.wg-pricing .item3 {
+    position: absolute;
+    top: -27px;
+    right: 438px;
+    width: 160px;
+    height: 29px;
+    transform: rotate(-20.673deg);
+    background: rgba(10, 127, 236, 0.70);
+    filter: blur(40px);
+}
+
+.wg-pricing .item4 {
+    position: absolute;
+    bottom: 396px;
+    right: -129px;
+    width: 223px;
+    height: 223px;
+    border-radius: 50%;
+    background: #ECE30A;
+    filter: blur(50px);
 }
 
 .pricing-item {
-    padding: 50px;
+    padding: 40px 50px 50px;
     background: #FFF;
     border: 1px solid #fff;
     border-radius: 15px;
@@ -1605,11 +1686,11 @@ ul.list-item li .icon-tick::before {
 
 .pricing-item h3 {
     letter-spacing: -0.72px;
-    margin-bottom: 25px;
+    margin-bottom: 8px;
 }
 
 .pricing-item p {
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 }
 
 .pricing-item .tf-button {
@@ -1631,7 +1712,7 @@ ul.list-item li .icon-tick::before {
     font-weight: 600;
     line-height: 34px;
     letter-spacing: -1.44px;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 }
 
 .pricing-item .number-price span {
@@ -1641,6 +1722,7 @@ ul.list-item li .icon-tick::before {
     font-style: italic;
     font-weight: 700;
     line-height: 28px;
+    letter-spacing: 0;
 }
 
 .pricing-item ul li {
@@ -1994,15 +2076,26 @@ ul.list-item li .icon-tick::before {
     color: #030014;
 }
 
-/* wrap-accordion */
+/* faqs-wrap */
+/* ------------------------------------- */
+.faqs-wrap {
+    padding-top: 129px;
+    padding-bottom: 130px;
+}
+
 .flat-accordion .flat-toggle,
 .flat-accordion1 .flat-toggle1 {
     position: relative;
     border-radius: 10px;
-    padding: 18px 30px;
+    padding: 20px 30px 18px;
     background: #FFF;
     box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.10);
     margin-bottom: 15px;
+}
+
+.flat-accordion .flat-toggle:last-child,
+.flat-accordion1 .flat-toggle1:last-child {
+    margin-bottom: 0;
 }
 
 .flat-accordion .flat-toggle.active ,
@@ -2027,7 +2120,8 @@ ul.list-item li .icon-tick::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 30px;
+    right: 0px;
+    font-size: 18px;
     content: '\ea3c';
     font-weight: 400;
     font-family: 'icomoon';
@@ -2051,7 +2145,7 @@ ul.list-item li .icon-tick::before {
 
 .flat-accordion .flat-toggle .toggle-content p ,
 .flat-accordion1 .flat-toggle1 .toggle-content p {
-    margin-top: 25px;
+    margin-top: 10px;
     color: #FFF;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -2105,7 +2199,7 @@ ul.list-item li .icon-tick::before {
 .wg-banner-2 {
     position: relative;
     padding-top: 155px;
-    padding-bottom: 85px;
+    padding-bottom: 185px;
     background-image: url(../images/item-background/line.png);
 }
 
@@ -2133,8 +2227,8 @@ ul.list-item li .icon-tick::before {
 }
 
 .wg-banner-2 .content .title {
-    margin-top: 95px;
-    margin-bottom: 50px;
+    margin-top: 81px;
+    margin-bottom: 24px;
     color:  #FFF;
     font-size: 65px;
     font-weight: 700;
@@ -2145,19 +2239,20 @@ ul.list-item li .icon-tick::before {
 .wg-banner-2 .content .title span {
     font-family: 'Playfair Display';
     font-style: italic;
+    line-height: 67px;
 }
 
 .wg-banner-2 .content > p {
     color: #FFF;
     font-size: 20px;
     line-height: 36px;
-    margin-bottom: 45px;
+    margin-bottom: 34px;
 }
 
 .wg-banner-2 .image .item-2 {
     position: absolute;
-    right: 64px;
-    bottom: 63px;
+    right: 0px;
+    bottom: -38px;
     border-radius: 12px;
     box-shadow: 0px 20px 60px 0px rgba(9, 182, 162, 0.20);
 }
@@ -2165,7 +2260,7 @@ ul.list-item li .icon-tick::before {
 .wg-banner-2 .image .item-1 {
     position: absolute;
     top: 57px;
-    left: 69px;
+    left: 11px;
     border-radius: 17px;
     box-shadow: 0px 20px 40px 0px rgba(9, 182, 162, 0.20);
 }
@@ -2173,7 +2268,7 @@ ul.list-item li .icon-tick::before {
 .wg-banner-2 .image .item-3 {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -65px;
     width: 393px;
     height: 393px;
     border-radius: 393px;
@@ -2182,8 +2277,8 @@ ul.list-item li .icon-tick::before {
 
 .wg-banner-2 .image .item-4 {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -58px;
+    bottom: -101px;
     width: 393px;
     height: 393px;
     border-radius: 393px;
@@ -2192,10 +2287,14 @@ ul.list-item li .icon-tick::before {
 
 /* wg-doing */
 /* -------------------------------------- */
+.wg-doing {
+    padding-top: 46px;
+}
+
 .doing-item {
-    padding: 35px 50px;
+    padding: 35px 50px 25px;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     background: linear-gradient(163deg, rgba(255, 255, 255, 0.15) 0%, rgba(9, 182, 162, 0.10) 100%);
     -webkit-transition: all 0.3s ease-in-out;
@@ -2224,7 +2323,7 @@ ul.list-item li .icon-tick::before {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .doing-item:hover .icon {
@@ -2245,6 +2344,7 @@ ul.list-item li .icon-tick::before {
 }
 
 .doing-item p {
+    margin-top: 8px;
     color: #C8C8C8;
 }
 

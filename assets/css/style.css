@@ -975,10 +975,10 @@ h6 {
 .e-resize {
     cursor: e-resize;
 }
-.bg-home2 {
+.home2 {
     background: #1D1F21;
 }
-.bg-home4 {
+.home4 {
     background: #11121C;
 }
 #wrapper{
@@ -1105,6 +1105,7 @@ a:focus {
 
 .tf-button.style-2 {
     color: #fff;
+    padding: 20px 29px;
     border: 1px solid #55EDDB;
     background: linear-gradient(145deg, #09B6A2 0%, #55EDDB 100%);
 }
@@ -1141,6 +1142,16 @@ a:focus {
 
 .tf-button-default i {
     font-size: 11px;
+}
+
+/* style-green */
+.tf-button.style-green {
+    background-color: rgba(9, 182, 162, 1);
+}
+
+.tf-button.style-green:hover {
+    color: rgba(9, 182, 162, 1);
+    background-color: #FFF;
 }
 
 /* header */
@@ -1390,7 +1401,6 @@ a:focus {
 }
 
 /* mobile header */
-/* ------------------------------------ */
 .mobile-nav-wrap .overlay-mobile-nav {
     cursor: url(../images/close.svg),auto;
     content: '';
@@ -1536,8 +1546,7 @@ a:focus {
     font-weight: 500;
 }
 
-/*Header fixed
--------------------------------- */
+/*Header fixed */
 .header.is-fixed {
     position: fixed;
     padding: 0;
@@ -1561,8 +1570,21 @@ a:focus {
     height: 105px;
 }
 
-.header.is-fixed.is-small .themesflat-container {
-    padding: 15px;
+/* header-green */
+.header-green .header-inner {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: unset;
+}
+
+.header-green #site-logo {
+    margin-right: 0;
+}
+
+.header-green .main-nav {
+    flex-grow: 1;
+    justify-content: end;
+    padding-right: 50px;
 }
 
 /* footer */
