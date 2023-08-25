@@ -158,7 +158,7 @@
             $grid.isotope({ filter: filterValue });
           });
           
-          $(".button-group").each(function (buttonGroup) {
+          $(".button-group").each(function (i, buttonGroup) {
             var $buttonGroup = $(buttonGroup);
             $buttonGroup.on("click", "button", function () {
               $buttonGroup.find(".is-checked").removeClass("is-checked");

@@ -915,6 +915,9 @@ h6 {
 .tf-color-green {
     color: #09B6A2 !important;
 }
+.tf-color-blue {
+    color: #3468F0 !important;
+}
 .divider {
     width: 100%;
     height: 1px;
@@ -931,6 +934,9 @@ h6 {
 }
 .mt-40 {
     margin-top: 40px;
+}
+.mt-20 {
+    margin-top: 20px;
 }
 .mb-10 {
     margin-bottom: 10px;
@@ -1163,6 +1169,19 @@ a:focus {
 .tf-button.style-blue:hover {
     color: rgba(52, 104, 240, 1);
     background-color: #FFF;
+}
+
+/* style-yellow */
+.tf-button.style-yellow {
+    background-color: #E6F85E;
+    border: 1px solid #E6F85E;
+    color: #030014;
+    padding: 17px 29px;
+}
+
+.tf-button.style-yellow:hover {
+    color: #E6F85E;
+    background-color: #030014;
 }
 
 /* header */
@@ -1650,6 +1669,36 @@ a:focus {
     background-color: rgba(52, 104, 240, 1);
 }
 
+.header.header-blue.is-fixed {
+    background-color: #FFF;
+}
+
+/* header-yellow */
+.header-yellow {
+    margin-bottom: 0;
+    background: rgba(23, 24, 37, 1);
+}
+
+.header-yellow .header-inner {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: unset;
+}
+
+.header.header-yellow .header-search .show-search:hover i::before,
+.header.header-yellow .menu-primary-menu .sub-menu li:hover a,
+.header.header-yellow .menu-primary-menu .sub-menu li.current-item a,
+.header.header-yellow .menu-primary-menu > li.current-menu-item > a,
+.header.header-yellow .menu-primary-menu > li:hover > a,
+.header.header-yellow .header-right .sign-in:hover {
+    color: #E6F85E;
+}
+
+.header.header-yellow .menu-primary-menu > li > a::before {
+    background-color: #E6F85E;
+}
+
+
 /* footer */
 /* --------------------------------------------------- */
 #footer {
@@ -1937,6 +1986,121 @@ ul.wg-menu li a:hover {
 
 #footer.style-1 form button:hover {
     color: #030014;
+}
+
+/* style-2 */
+#footer.style-2 {
+    background-color: rgba(242, 248, 253, 1);
+    padding-top: 80px;
+    background-image: url(../images/item-background/line-1.png);
+}
+
+#footer.style-2 .content p {
+    margin-top: 23px;
+    margin-bottom: 27px;
+}
+
+#footer.style-2 .footer-bottom {
+    border-top: 1px solid rgba(52, 104, 240, 0.2);
+    margin-top: 80px;
+    padding-top: 31px;
+}
+
+#footer.style-2 .footer-bottom p {
+    color: #696969;
+}
+
+#footer.style-2 .footer-bottom ul {
+    gap: 29px;
+}
+
+#footer.style-2 .footer-bottom ul li a {
+    color: #696969;
+}
+
+.box-email {
+    width: 277px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(52, 104, 240, 0.30);
+    background: #FFF;
+    box-shadow: 0px 10px 60px 0px rgba(52, 104, 240, 0.15);
+}
+
+.box-email .icon-mail {
+    font-size: 20px;
+}
+
+.box-email a {
+    color:  #030014;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.54px;
+}
+
+.box-subscribe {
+    padding: 32px 60px 40px 60px;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.box-subscribe h4 {
+    color: #030014;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: -0.66px;
+    margin-bottom: -1px;
+}
+
+.box-subscribe h4 span {
+    color: #3468F0;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: -0.66px;
+}
+
+.box-subscribe form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-subscribe form input {
+    border-radius: 12px;
+    color: #030014;
+    border: 1px solid #3468F0;
+    background:  #F2F8FD;
+    padding: 20px 30px 20px 24px;
+    height: 51px;
+    width: 100%;
+}
+
+.box-subscribe form input:focus {
+    border: 1px solid #3468F0;
+    padding: 20px 30px 20px 24px;
+}
+
+.box-subscribe form input::placeholder {
+    color: #030014;
+}
+
+.box-subscribe form button {
+    background: rgba(52, 104, 240, 1);
+    padding: 19px 47px 19px 29px;
+    border: 1px solid rgba(52, 104, 240, 1);
+}
+
+.box-subscribe form button:hover {
+    color: rgba(52, 104, 240, 1);
 }
 
 /* cta */
