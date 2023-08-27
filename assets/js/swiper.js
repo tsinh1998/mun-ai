@@ -47,3 +47,24 @@ var gallery = function(){
   }
 }
 gallery();
+
+var gallery1 = function(){
+  if ( $('div').hasClass('gallery-style-1') ){
+var slider = new Swiper ('.gallery-slider', {
+  slidesPerView: 1,
+  loop: true,
+  effect:'fade',
+  loopedSlides: 4,
+});
+
+var thumbs = new Swiper ('.gallery-thumbs', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  loop: true,
+  slideToClickedSlide: true,
+});
+  slider.controller.control = thumbs;
+  thumbs.controller.control = slider;
+}
+}
+gallery1();

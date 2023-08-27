@@ -269,13 +269,13 @@
     });
   };
 
-  
-
-  $(document).ready(function() {
+  var video = function(){
+    if ($('div').hasClass('video-wrap')) {
       $('.popup-youtube').magnificPopup({
-      type: 'iframe'
-    });
-  });
+        type: 'iframe'
+      });
+    }
+  };
 
     // Dom Ready
     $(function () {
@@ -290,6 +290,7 @@
         dropdown('#sort-by');
         btnQuantity();
         tabs();
+        video();
     });
 
 })(jQuery);
