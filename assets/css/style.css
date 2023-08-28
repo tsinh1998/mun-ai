@@ -855,6 +855,9 @@ h6 {
 .position-unset {
     position: unset;
 }
+.z-5 {
+    z-index: 5;
+}
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -1439,6 +1442,12 @@ a:focus {
     transform        : translate3d(0, 7px, 0);
 }
 
+.header.header-blue .mobile-button:before, 
+.header.header-blue .mobile-button:after, 
+.header.header-blue .mobile-button span {
+    background-color: #030014;
+}
+
 /* mobile header */
 .mobile-nav-wrap .overlay-mobile-nav {
     cursor: url(../images/close.svg),auto;
@@ -1710,6 +1719,10 @@ a:focus {
     background: #0C091D;
     background-image: url(../images/item-background/line.png);
     position: relative;
+}
+
+#logo-footer {
+    min-width: 166px;
 }
 
 .footer-top {

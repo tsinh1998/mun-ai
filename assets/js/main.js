@@ -284,6 +284,7 @@
         counter();
         flatAccordion('.flat-accordion','.flat-toggle');
         flatAccordion('.flat-accordion1','.flat-toggle1');
+        flatAccordion('.flat-accordion2','.flat-toggle2');
         filter();
         price();
         rangeslider();
