@@ -8,6 +8,7 @@
 @import "shortcodes.css";
 @import "responsive.css";
 @import "animation.css";
+@import "textanimation.css";
 @import "animate.min.css";
 @import "nouislider.min.css";
 @import "swiper-bundle.min.css";
@@ -944,6 +945,9 @@ h6 {
 }
 .mt-20 {
     margin-top: 20px;
+}
+.mt-10 {
+    margin-top: 10px;
 }
 .mb-10 {
     margin-bottom: 10px;
@@ -2376,6 +2380,7 @@ ul.wg-menu li a:hover {
     border: 3px solid var(--color-white, #FFF);
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.20);
     width: 50px;
+    z-index: 5;
 }
 
 .cta.type-1 > .img1 {
@@ -2531,4 +2536,237 @@ ul.wg-menu li a:hover {
     letter-spacing: -0.9px;
     text-align: center;
     margin-bottom: 42px;
+}
+
+/* preload */
+/* -------------------------------- */
+.preload-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999999999999;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.preload-container .middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.preload-container .bar {
+    width: 10px;
+    height: 70px;
+    background: transparent;
+    display: inline-block;
+    transform-origin: bottom center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    animation: loader 1.2s linear infinite;
+}
+
+body.page-green .preload-container .bar {
+    animation: loader1 1.2s linear infinite;
+}
+
+body.page-blue .preload-container .bar {
+    animation: loader2 1.2s linear infinite;
+}
+
+body.page-yellow .preload-container .bar {
+    animation: loader3 1.2s linear infinite;
+}
+
+.preload-container .bar1 {
+    animation-delay: 0.1s !important;
+}
+.preload-container .bar2 {
+    animation-delay: 0.2s !important;
+}
+.preload-container .bar3 {
+    animation-delay: 0.3s !important;
+}
+.preload-container .bar4 {
+    animation-delay: 0.4s !important;
+}
+.preload-container .bar5 {
+    animation-delay: 0.5s !important;
+}
+.preload-container .bar6 {
+    animation-delay: 0.6s !important;
+}
+.preload-container .bar7 {
+    animation-delay: 0.7s !important;
+}
+.preload-container .bar8 {
+    animation-delay: 0.8s !important;
+}
+
+/* progress- */
+/* ---------------------------------------- */
+.progress-wrap {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 0 2px rgba(130, 130, 130, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(130, 130, 130, 0.2);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    transition: all 400ms linear;
+    background: #6844ED;
+}
+  
+.progress-wrap::after {
+    position: absolute;
+    content: '\e912';
+    font-family: 'icomoon';
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+  
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+  
+.progress-wrap svg path {
+    fill: none;
+}
+  
+.progress-wrap svg.progress-circle path {
+    box-sizing: border-box;
+    stroke: #fff;
+    stroke-width: 5;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+}
+
+body.page-green .progress-wrap {
+    background: #09B6A2;    
+}
+
+body.page-blue .progress-wrap {
+    background: #3468F0;
+}
+
+body.page-yellow .progress-wrap {
+    background: #E6F85E;
+}
+
+body.page-yellow .progress-wrap::after {
+    color: #030014;
+}
+
+body.page-yellow .progress-wrap svg.progress-circle path {
+    stroke: #030014;
+}
+
+
+/* cursor */
+/* ------------------------------------------  */
+.tf-mouse {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    visibility: hidden
+}
+
+.tf-mouse-inner {
+    margin-left: -5px;
+    margin-top: -5px;
+    width: 8px;
+    height: 8px;
+    z-index: 10000;
+    background-color: #6844ED;
+    -webkit-transition: width .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out, opacity .5s ease-in-out;
+    transition: width .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out, opacity .5s ease-in-out
+}
+
+.tf-mouse-inner.mouse-hover {
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    background-color: #6844ED;
+    opacity: .3
+}
+
+.tf-mouse-outer {
+    margin-left: -22px;
+    margin-top: -22px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #6844ED;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10000;
+    opacity: .5;
+    -webkit-transition: all .05s ease-out;
+    transition: all .05s ease-out
+}
+
+.tf-mouse-outer.mouse-hover {
+    opacity: 0
+}
+
+body.page-green .tf-mouse-inner {
+    background-color: #09B6A2;
+}
+
+body.page-green .tf-mouse-outer {
+    border-color: #09B6A2;
+}
+
+body.page-blue .tf-mouse-inner {
+    background-color: #3468F0;
+}
+
+body.page-blue .tf-mouse-outer {
+    border-color: #3468F0;
+}
+
+body.page-yellow .tf-mouse-inner {
+    background-color: #E6F85E;
+}
+
+body.page-yellow .tf-mouse-outer {
+    border-color: #E6F85E;
 }
