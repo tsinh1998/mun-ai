@@ -365,11 +365,17 @@ const cursor = function () {
   };  
 
   var preloader = function () {
-    setTimeout(function () {
+    // setTimeout(function () {
+    // $(".preload-container").fadeOut("slow", function () {
+    //     $(this).remove();
+    // });
+    // }, 1000);
+
     $(".preload-container").fadeOut("slow", function () {
-        $(this).remove();
-    });
-    }, 1000);
+      setTimeout(function () {
+          $(".preload-container").remove();
+      }, 1000);
+  });
   };
 
     // Dom Ready
