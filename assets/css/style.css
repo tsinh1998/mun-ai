@@ -1,5 +1,5 @@
 /**
-  * Name: Open9 | NFT Marketplace HTML Template
+  * Name: MunAi - AI Writer & Copywriting HTML Template
   * Version: 1.0.1
   * Author: Themesflat
   * Author URI: http://www.themesflat.com
@@ -1301,6 +1301,7 @@ a:focus {
     left: 0%;
     top: 110%;
     border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(104, 68, 237, 0.15);;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1908,6 +1909,7 @@ ul.wg-menu li a:hover {
     position: absolute;
     top: 249px;
     left: 72px;
+    animation: to-bottom 5s infinite linear;
 }
 
 #footer .item2 {
@@ -2404,21 +2406,25 @@ ul.wg-menu li a:hover {
 .cta.type-1 > .img1 {
     top: 142px;
     left: 146px;
+    animation: to-bottom 5s infinite linear;
 }
 
 .cta.type-1 > .img2 {
     bottom: 74px;
     left: 248px;
+    animation: to-bottom 5s infinite linear;
 }
 
 .cta.type-1 > .img3 {
     bottom: 85px;
     right: 256px;
+    animation: to-bottom 5s infinite linear;
 }
 
 .cta.type-1 > .img4 {
     top: 95px;
     right: 160px;
+    animation: to-bottom 5s infinite linear;
 }
 
 .cta .cta-title {

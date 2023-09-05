@@ -1,8 +1,19 @@
 /**
-    * headerFixed
-    *
-    * retinaLogo
-    * preloader
+    *  btnmenu
+    *  headerFixed
+    *  counter
+    *  flatAccordion
+    *  filter
+    *  price
+    *  rangeslider
+    *  dropdown
+    *  btnQuantity
+    *  tabs
+    *  video
+    *  cursor
+    *  gotop
+    *  retinaLogos
+    *  preloader
 */
 
 ; (function ($) {
@@ -365,12 +376,6 @@ const cursor = function () {
   };  
 
   var preloader = function () {
-    // setTimeout(function () {
-    // $(".preload-container").fadeOut("slow", function () {
-    //     $(this).remove();
-    // });
-    // }, 1000);
-
     $(".preload-container").fadeOut("slow", function () {
       setTimeout(function () {
           $(".preload-container").remove();
